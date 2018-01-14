@@ -9,10 +9,10 @@
 
 set -x
 
-USER=panyongde # 用户
-GROUP=panyongde # 组
+USER=root # 用户
+GROUP=root # 组
 FLANELADDR=https://raw.githubusercontent.com/coreos/flannel/v0.9.1/Documentation/kube-flannel.yml
-KUBECONF=/home/panyongde/kubernetes_init/kubeadm.conf # 文件地址, 改成你需要的路径
+KUBECONF=/root/kubernetes_init/kubeadm.conf # 文件地址, 改成你需要的路径
 REGMIRROR=http://6f410ddf.m.daocloud.io # docker registry mirror 地址
 
 # you can get the following values from `kubeadm init` output
