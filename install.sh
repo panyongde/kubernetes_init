@@ -77,6 +77,7 @@ case "$1" in
     install_kube_commands
     ;;
   "kubernetes-master")
+    swapoff -a
     sysctl net.bridge.bridge-nf-call-iptables=1
     restart_kubelet
     kubeadm init --config $KUBECONF
