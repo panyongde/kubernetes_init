@@ -17,10 +17,10 @@ REGMIRROR=http://6f410ddf.m.daocloud.io # docker registry mirror 地址
 
 # you can get the following values from `kubeadm init` output
 # these are needed when creating node
-MASTERTOKEN=YOUR_TOKEN
-MASTERIP=MASTER_IP
-MASTERPORT=MASTER_PORT
-MASTERHASH=MASTER_HASH
+MASTERTOKEN=b84a43.32d16cd8950c5918
+MASTERIP=192.168.1.28
+MASTERPORT=6443
+MASTERHASH=920327053a6494084cf5688f40eb7072100821b6a597e4aca8d6
 
 install_docker() {
   mkdir /etc/docker
