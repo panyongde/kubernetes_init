@@ -20,7 +20,7 @@ REGMIRROR=http://6f410ddf.m.daocloud.io # docker registry mirror 地址
 MASTERTOKEN=b84a43.32d16cd8950c5918
 MASTERIP=192.168.2.178
 MASTERPORT=6443
-MASTERHASH=04deb4bb45b91f1d7ca16d61c8ac05e70cb045ba1d8346375d5381b3cdb62894
+MASTERHASH=c87fe6bb68c8565ecc94efc41bbb9ae6b5a1bfe14f4d426158a673b20ca17387
 
 install_docker() {
   mkdir /etc/docker
