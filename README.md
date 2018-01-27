@@ -7,19 +7,21 @@ install docker, kubernetes and initialize kubernetes cluster by kubeadm
 ## 如何使用
 ```
 # 安装 master (在master机器上进行)
-git clone git@github.com:EagleChen/kubernetes_init.git
+git clone https://github.com/panyongde/kubernetes_init.git
 cd kubernetes_init
+
 # 修改 install.sh, 一定要(至少)改前面几个变量， 否则并不会执行成功
-sudo ./install.sh pre   # 安装 docker、kube* 等基础工具
-sudo ./install.sh kubernetes-master   # 利用kubeadm安装master节点
+./install.sh pre   # 安装 docker、kube* 等基础工具
+./install.sh kubernetes-master   # 利用kubeadm安装master节点
 ./install.sh post # 安装网络组件
 
 # 等master安装好, 从输出中获取相关参数，然后安装node (在node机器上进行)
-git clone git@github.com:EagleChen/kubernetes_init.git
+git clone https://github.com/panyongde/kubernetes_init.git
 cd kubernetes_init
+
 # 修改 install.sh, 一定要(至少)改前面几个变量， 否则并不会执行成功
-sudo ./install.sh pre   # 安装 docker、kube* 等基础工具
-sudo ./install.sh kubernetes-node   # 利用kubeadm把node添加进cluster
+./install.sh pre   # 安装 docker、kube* 等基础工具
+./install.sh kubernetes-node   # 利用kubeadm把node添加进cluster
 ```
 
 ## 注意事项
