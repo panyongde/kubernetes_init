@@ -53,6 +53,10 @@ swapoff -a
 如果在执行 ./install.sh kubernetes-master 因网络问题卡住或者遇到错误，是不能再执行一遍的，需要进行重置
 
 ```shell
+# 设置docker镜像国内源
+curl -sSL https://get.daocloud.io/daotools/set_mirror.sh | sh -s http://6f410ddf.m.daocloud.io
+systemctl restart docker.service
+
 # 重置
 kubeadm reset
 # 然后再安装master节点
