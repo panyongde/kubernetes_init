@@ -18,7 +18,7 @@ REGMIRROR=https://9m126f5q.mirror.aliyuncs.com # docker registry mirror 地址
 # you can get the following values from `kubeadm init` output
 # these are needed when creating node
 MASTERTOKEN=b84a43.32d16cd8950c5918
-MASTERIP=192.168.2.150
+MASTERIP=47.106.88.96
 MASTERPORT=6443
 MASTERHASH=c87fe6bb68c8565ecc94efc41bbb9ae6b5a1bfe14f4d426158a673b20ca17387
 
